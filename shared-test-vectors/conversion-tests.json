@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fibrinogen-100",
+    "operation": "convert",
+    "input": [
+      "100",
+      "fibrinogen"
+    ],
+    "expected": "1"
+  },
+  {
+    "id": "fibrinogen-99.9",
+    "operation": "convert",
+    "input": [
+      "99,9",
+      "fibrinogen"
+    ],
+    "expected": "0.999"
+  },
+  {
+    "id": "bilirubin-si",
+    "operation": "convert",
+    "input": [
+      "34.2",
+      "bilirubin"
+    ],
+    "expected": "2"
+  },
+  {
+    "id": "creatinine-si",
+    "operation": "convert",
+    "input": [
+      "176.8",
+      "creatinine"
+    ],
+    "expected": "2"
+  }
+]

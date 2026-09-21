@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SIC + overt DIC</string>
+    <string name="development">Версия для разработки — не для клинических решений</string>
+    <string name="express">Экспресс</string>
+    <string name="detailed">Подробно</string>
+    <string name="platelets">Тромбоциты, ×10⁹/л (=10³/мкл)</string>
+    <string name="inr">ПВ–INR</string>
+    <string name="sofa">SOFA: сумма 4 компонентов (0–16)</string>
+    <string name="sofa_note">Только дыхание, кровообращение, печень и почки. Не включайте тромбоциты и ШКГ.</string>
+    <string name="dimer">D-димер: результат</string>
+    <string name="uln">D-димер: ВГН лаборатории</string>
+    <string name="pt">ПВ пациента, с</string>
+    <string name="control">Контрольное ПВ лаборатории, с</string>
+    <string name="fibrinogen">Фибриноген</string>
+    <string name="fibrinogen_unit">Единица фибриногена</string>
+    <string name="dimer_unit">Общая единица результата D-димера и ВГН</string>
+    <string name="dimer_basis">Общая система D-димера и ВГН</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="comparable">Подтверждаю: результат и ВГН — один метод, единицы и FEU/DDU</string>
+    <string name="sepsis">Сепсис</string>
+    <string name="sepsis_yes">Установлен</string>
+    <string name="sepsis_suspected">Подозревается</string>
+    <string name="sepsis_no">Не установлен</string>
+    <string name="condition">Заболевание, способное вызвать ДВС</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="pregnancy">Беременность</string>
+    <string name="postpartum">Послеродовой / акушерский контекст</string>
+    <string name="pediatric">Ребёнок</string>
+    <string name="special_warning">Стандартные критерии могут быть неприменимы: требуется специализированный подход.</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="clear">Новый пациент / очистить</string>
+    <string name="copy">Копировать результат</string>
+    <string name="why">Почему такой балл?</string>
+    <string name="insufficient">Недостаточно данных для расчёта. Проверьте формат, диапазоны, единицы и сопоставимость.</string>
+    <string name="sic_met">Численные критерии SIC выполнены.</string>
+    <string name="sic_not">Численные критерии SIC не выполнены; коагулопатия не исключена.</string>
+    <string name="sic_context">Клиническая интерпретация SIC требует установленного сепсиса.</string>
+    <string name="dic_met">Порог ISTH overt DIC достигнут; соответствует overt DIC в подходящем клиническом контексте.</string>
+    <string name="dic_not">Порог overt DIC не достигнут; ДВС не исключён. При сохраняющемся подозрении нужна динамическая переоценка.</string>
+    <string name="dic_context">Без соответствующего основного заболевания результат не подтверждает ДВС.</string>
+    <string name="negative_pt">ПВ пациента меньше контрольного: проверьте ввод и контроль. Балл ПВ = 0.</string>
+    <string name="rules">Правила</string>
+    <string name="version">Приложение</string>
+    <string name="time">Время расчёта</string>
+    <string name="breakdown">Компоненты в порядке полей; итог и признак достижения порога:</string>
+    <string name="sic_parts">Тромбоциты / INR / SOFA</string>
+    <string name="dic_parts">Тромбоциты / D-димер / ПВ / фибриноген</string>
+    <string name="ratio">D-димер / ВГН (отображение округлено)</string>
+    <string name="delta">ПВ пациента − контрольное ПВ, с</string>
+    <string name="about">О программе и источники</string>
+    <string name="about_body">Работает без сети. Данные пациента не сохраняются. Нет аналитики или лечения. Копирование выполняется только по вашей команде. Независимая клиническая валидация не выполнена. Лицензия Apache-2.0.\nISTH 2025: DOI 10.1016/j.jtha.2025.03.038\nSIC: DOI 10.1136/bmjopen-2017-017046\nSOFA: DOI 10.1007/BF01709751\nЭто начальный этап проекта. История, экспорт PDF, настройки лаборатории и интерфейс SOFA helper ещё не выпущены.</string>
+    <string name="dark">Тёмная тема</string>
+</resources>

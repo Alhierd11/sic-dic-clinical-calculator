@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SIC + overt DIC</string>
+    <string name="development">Development build — not for clinical decisions</string>
+    <string name="express">Express</string>
+    <string name="detailed">Detailed</string>
+    <string name="platelets">Platelets, ×10⁹/L (=10³/µL)</string>
+    <string name="inr">PT–INR</string>
+    <string name="sofa">SOFA: four-component sum (0–16)</string>
+    <string name="sofa_note">Respiratory, cardiovascular, hepatic and renal only. Exclude coagulation and GCS.</string>
+    <string name="dimer">D-dimer: result</string>
+    <string name="uln">D-dimer: laboratory ULN</string>
+    <string name="pt">Patient PT, seconds</string>
+    <string name="control">Laboratory control PT, seconds</string>
+    <string name="fibrinogen">Fibrinogen</string>
+    <string name="fibrinogen_unit">Fibrinogen unit</string>
+    <string name="dimer_unit">Shared D-dimer result and ULN unit</string>
+    <string name="dimer_basis">Shared D-dimer result and ULN basis</string>
+    <string name="unknown">Unknown</string>
+    <string name="comparable">Confirmed: result and ULN use the same assay, units and FEU/DDU basis</string>
+    <string name="sepsis">Sepsis</string>
+    <string name="sepsis_yes">Established</string>
+    <string name="sepsis_suspected">Suspected</string>
+    <string name="sepsis_no">Not established</string>
+    <string name="condition">Underlying condition capable of causing DIC</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pregnancy">Pregnancy</string>
+    <string name="postpartum">Postpartum / obstetric context</string>
+    <string name="pediatric">Pediatric patient</string>
+    <string name="special_warning">Standard criteria may not apply: a specialized approach is required.</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">New patient / clear</string>
+    <string name="copy">Copy result</string>
+    <string name="why">Why this score?</string>
+    <string name="insufficient">Insufficient data. Check format, ranges, units and comparability.</string>
+    <string name="sic_met">Numerical SIC criteria met.</string>
+    <string name="sic_not">Numerical SIC criteria not met; coagulopathy is not excluded.</string>
+    <string name="sic_context">Clinical SIC interpretation requires established sepsis.</string>
+    <string name="dic_met">ISTH threshold reached; score consistent with overt DIC in an appropriate clinical context.</string>
+    <string name="dic_not">Overt DIC threshold not reached; DIC is not excluded. Reassess over time if clinical suspicion persists.</string>
+    <string name="dic_context">Without an appropriate underlying condition, this result does not confirm DIC.</string>
+    <string name="negative_pt">Patient PT is shorter than control: check input and control. PT score = 0.</string>
+    <string name="rules">Rules</string>
+    <string name="version">Application</string>
+    <string name="time">Calculated at</string>
+    <string name="breakdown">Components in field order; total and threshold flag:</string>
+    <string name="sic_parts">Platelets / INR / SOFA</string>
+    <string name="dic_parts">Platelets / D-dimer / PT / fibrinogen</string>
+    <string name="ratio">D-dimer / ULN (display rounded)</string>
+    <string name="delta">Patient PT − control PT, seconds</string>
+    <string name="about">About and references</string>
+    <string name="about_body">Works offline. Patient data are not saved. No analytics or treatment advice. Copy only at your request. Independent clinical validation has not been completed. Apache-2.0 license.\nISTH 2025: DOI 10.1016/j.jtha.2025.03.038\nSIC: DOI 10.1136/bmjopen-2017-017046\nSOFA: DOI 10.1007/BF01709751\nFoundation milestone. History, PDF export, laboratory settings and SOFA helper UI have not been released.</string>
+    <string name="dark">Dark theme</string>
+</resources>

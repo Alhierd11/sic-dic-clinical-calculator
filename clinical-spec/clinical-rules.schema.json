@@ -1,0 +1,673 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "status",
+    "numeric",
+    "sic",
+    "dic",
+    "bands",
+    "conversions",
+    "sofaPolicy",
+    "sources",
+    "releaseBlockers"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "numeric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "maxIntegerDigits",
+        "maxFractionDigits",
+        "decimalSeparators"
+      ],
+      "properties": {
+        "maxIntegerDigits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maxFractionDigits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "decimalSeparators": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "sic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "threshold",
+        "coagulationExclusiveMinimum",
+        "maximum",
+        "sofaMaximum",
+        "components"
+      ],
+      "properties": {
+        "threshold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coagulationExclusiveMinimum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maximum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sofaMaximum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "dic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "threshold",
+        "maximum",
+        "requireComparableDimer"
+      ],
+      "properties": {
+        "threshold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maximum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "requireComparableDimer": {
+          "type": "boolean"
+        }
+      }
+    },
+    "bands": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sicPlatelets",
+        "sicInr",
+        "sicSofa",
+        "dicPlatelets",
+        "dicDimer",
+        "dicPt",
+        "dicFibrinogen",
+        "respiratoryUnsupported",
+        "respiratorySupported",
+        "hepaticMgDl",
+        "renalMgDl",
+        "urine24h",
+        "map",
+        "dopamine",
+        "epinephrine",
+        "dobutamine"
+      ],
+      "properties": {
+        "sicPlatelets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "sicInr": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "sicSofa": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "dicPlatelets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "dicDimer": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "dicPt": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "dicFibrinogen": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "respiratoryUnsupported": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "respiratorySupported": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "hepaticMgDl": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "renalMgDl": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "urine24h": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "map": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "dopamine": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "epinephrine": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        },
+        "dobutamine": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "enum": [
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "always"
+                ]
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+(\\.[0-9]+)?$"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            ],
+            "minItems": 3,
+            "maxItems": 3
+          }
+        }
+      }
+    },
+    "conversions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fibrinogenMgDlPerGL",
+        "bilirubinUmolPerMgDl",
+        "creatinineUmolPerMgDl"
+      ],
+      "properties": {
+        "fibrinogenMgDlPerGL": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bilirubinUmolPerMgDl": {
+          "type": "string",
+          "minLength": 1
+        },
+        "creatinineUmolPerMgDl": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "sofaPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "windowHours",
+        "vasopressorMinimumMinutes",
+        "conventionalUnitsAuthoritative",
+        "endpointPolicy",
+        "missingPolicy"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "windowHours": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "vasopressorMinimumMinutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "conventionalUnitsAuthoritative": {
+          "type": "boolean"
+        },
+        "endpointPolicy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "missingPolicy": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "releaseBlockers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

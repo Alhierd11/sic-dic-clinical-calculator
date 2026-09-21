@@ -1,0 +1,16 @@
+.build/
+**/bin/
+**/obj/
+**/build/
+**/.gradle/
+.idea/
+.vs/
+local.properties
+*.keystore
+*.jks
+*.pfx
+*.pem
+*.key
+.env*
+__pycache__/
+*.pyc

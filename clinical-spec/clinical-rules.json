@@ -1,0 +1,348 @@
+{
+  "version": "2025.1.0-draft.1",
+  "status": "development-not-clinically-validated",
+  "numeric": {
+    "maxIntegerDigits": 9,
+    "maxFractionDigits": 6,
+    "decimalSeparators": [
+      ".",
+      ","
+    ]
+  },
+  "sic": {
+    "threshold": 4,
+    "coagulationExclusiveMinimum": 2,
+    "maximum": 6,
+    "sofaMaximum": 16,
+    "components": [
+      "respiratory",
+      "cardiovascular",
+      "hepatic",
+      "renal"
+    ]
+  },
+  "dic": {
+    "threshold": 5,
+    "maximum": 8,
+    "requireComparableDimer": true
+  },
+  "bands": {
+    "sicPlatelets": [
+      [
+        "lt",
+        "100",
+        2
+      ],
+      [
+        "lt",
+        "150",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "sicInr": [
+      [
+        "gt",
+        "1.4",
+        2
+      ],
+      [
+        "gt",
+        "1.2",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "sicSofa": [
+      [
+        "ge",
+        "2",
+        2
+      ],
+      [
+        "ge",
+        "1",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "dicPlatelets": [
+      [
+        "lt",
+        "50",
+        2
+      ],
+      [
+        "lt",
+        "100",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "dicDimer": [
+      [
+        "gt",
+        "7",
+        3
+      ],
+      [
+        "gt",
+        "3",
+        2
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "dicPt": [
+      [
+        "ge",
+        "6",
+        2
+      ],
+      [
+        "ge",
+        "3",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "dicFibrinogen": [
+      [
+        "lt",
+        "1",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "respiratoryUnsupported": [
+      [
+        "lt",
+        "300",
+        2
+      ],
+      [
+        "lt",
+        "400",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "respiratorySupported": [
+      [
+        "lt",
+        "100",
+        4
+      ],
+      [
+        "lt",
+        "200",
+        3
+      ],
+      [
+        "lt",
+        "300",
+        2
+      ],
+      [
+        "lt",
+        "400",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "hepaticMgDl": [
+      [
+        "ge",
+        "12",
+        4
+      ],
+      [
+        "ge",
+        "6",
+        3
+      ],
+      [
+        "ge",
+        "2",
+        2
+      ],
+      [
+        "ge",
+        "1.2",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "renalMgDl": [
+      [
+        "ge",
+        "5",
+        4
+      ],
+      [
+        "ge",
+        "3.5",
+        3
+      ],
+      [
+        "ge",
+        "2",
+        2
+      ],
+      [
+        "ge",
+        "1.2",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "urine24h": [
+      [
+        "lt",
+        "200",
+        4
+      ],
+      [
+        "lt",
+        "500",
+        3
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "map": [
+      [
+        "lt",
+        "70",
+        1
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "dopamine": [
+      [
+        "gt",
+        "15",
+        4
+      ],
+      [
+        "gt",
+        "5",
+        3
+      ],
+      [
+        "gt",
+        "0",
+        2
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "epinephrine": [
+      [
+        "gt",
+        "0.1",
+        4
+      ],
+      [
+        "gt",
+        "0",
+        3
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ],
+    "dobutamine": [
+      [
+        "gt",
+        "0",
+        2
+      ],
+      [
+        "always",
+        "0",
+        0
+      ]
+    ]
+  },
+  "conversions": {
+    "fibrinogenMgDlPerGL": "100",
+    "bilirubinUmolPerMgDl": "17.1",
+    "creatinineUmolPerMgDl": "88.4"
+  },
+  "sofaPolicy": {
+    "version": "SOFA-1-continuous-conventional-draft",
+    "windowHours": 24,
+    "vasopressorMinimumMinutes": 60,
+    "conventionalUnitsAuthoritative": true,
+    "endpointPolicy": "Continuous intervals: bilirubin >=12 and creatinine >=5; independent review required.",
+    "missingPolicy": "Require all four systems, explicit support state, all drug doses (zero if absent), creatinine and 24h urine; do not impute."
+  },
+  "sources": [
+    "doi:10.1016/j.jtha.2025.03.038",
+    "doi:10.1136/bmjopen-2017-017046",
+    "doi:10.1007/BF01709751",
+    "doi:10.1001/jama.2016.0287"
+  ],
+  "releaseBlockers": [
+    "Independent clinical review",
+    "Publisher DIC Table 1 verification",
+    "SOFA continuous endpoint/unit policy approval",
+    "Native UI validation and accessibility review"
+  ]
+}

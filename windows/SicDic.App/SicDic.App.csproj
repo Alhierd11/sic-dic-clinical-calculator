@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWPF>true</UseWPF><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><Version>0.1.0</Version><AssemblyInformationalVersion>0.1.0-dev</AssemblyInformationalVersion><TreatWarningsAsErrors>true</TreatWarningsAsErrors><Deterministic>true</Deterministic></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../SicDic.Core/SicDic.Core.csproj" /><EmbeddedResource Include="../../localization/*.json" Link="Localization/%(Filename)%(Extension)" /></ItemGroup>
+</Project>

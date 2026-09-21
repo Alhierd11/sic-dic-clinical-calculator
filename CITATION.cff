@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite the exact software commit and clinical ruleset; also cite the original clinical publications."
+title: "SIC + overt DIC Clinical Calculator — ISTH 2025"
+type: software
+authors:
+  - name: "SIC + overt DIC Clinical Calculator contributors"
+version: 0.1.0-dev
+license: Apache-2.0
+repository-code: "https://github.com/Alhierd11/sic-dic-clinical-calculator"
+abstract: "Offline native Android and Windows clinical calculator foundations; not independently clinically validated."

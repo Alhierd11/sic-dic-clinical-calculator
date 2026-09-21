@@ -1,0 +1,102 @@
+fibrinogen-100	convert	100	fibrinogen	1
+fibrinogen-99.9	convert	99,9	fibrinogen	0.999
+bilirubin-si	convert	34.2	bilirubin	2
+creatinine-si	convert	176.8	creatinine	2
+dic-platelets-49.999	dic	49.999	3	1	12	12	1	g/L	true	2,0,0,0,2,false,false
+dic-platelets-50	dic	50	3	1	12	12	1	g/L	true	1,0,0,0,1,false,false
+dic-platelets-99.999	dic	99.999	3	1	12	12	1	g/L	true	1,0,0,0,1,false,false
+dic-platelets-100	dic	100	3	1	12	12	1	g/L	true	0,0,0,0,0,false,false
+dic-dimer-3	dic	100	3	1	12	12	1	g/L	true	0,0,0,0,0,false,false
+dic-dimer-3.0001	dic	100	3.0001	1	12	12	1	g/L	true	0,2,0,0,2,false,false
+dic-dimer-7	dic	100	7	1	12	12	1	g/L	true	0,2,0,0,2,false,false
+dic-dimer-7.0001	dic	100	7.0001	1	12	12	1	g/L	true	0,3,0,0,3,false,false
+dic-pt-14.999	dic	100	3	1	14.999	12	1	g/L	true	0,0,0,0,0,false,false
+dic-pt-15	dic	100	3	1	15	12	1	g/L	true	0,0,1,0,1,false,false
+dic-pt-17.999	dic	100	3	1	17.999	12	1	g/L	true	0,0,1,0,1,false,false
+dic-pt-18	dic	100	3	1	18	12	1	g/L	true	0,0,2,0,2,false,false
+dic-fibrinogen-0.999	dic	100	3	1	12	12	0.999	g/L	true	0,0,0,1,1,false,false
+dic-fibrinogen-1.000	dic	100	3	1	12	12	1.000	g/L	true	0,0,0,0,0,false,false
+dic-total-4	dic	50	7	1	15	12	1	g/L	true	1,2,1,0,4,false,false
+dic-total-5	dic	50	7	1	18	12	1	g/L	true	1,2,2,0,5,true,false
+dic-total-8	dic	49	8	1	18	12	0.9	g/L	true	2,3,2,1,8,true,false
+dic-negative-delta	dic	100	3	1	11	12	1	g/L	true	0,0,0,0,0,false,true
+dic-ratio-exact-three	dic	100	0.9	0.3	12	12	100	mg/dL	true	0,0,0,0,0,false,false
+dic-ratio-exact-seven	dic	100	2.1	0.3	12	12	100	mg/dL	true	0,2,0,0,2,false,false
+dic-ratio-above-seven	dic	100	2.100001	0.3	12	12	99.9	mg/dL	true	0,3,0,1,4,false,false
+invalid-number-0	sic		1.2	0	ERROR
+invalid-number-1	sic	-1	1.2	0	ERROR
+invalid-number-2	sic	NaN	1.2	0	ERROR
+invalid-number-3	sic	Infinity	1.2	0	ERROR
+invalid-number-4	sic	1e3	1.2	0	ERROR
+invalid-number-5	sic	1,2.3	1.2	0	ERROR
+invalid-number-6	sic	1 000	1.2	0	ERROR
+invalid-number-7	sic	1.1234567	1.2	0	ERROR
+invalid-number-8	sic	1000000000	1.2	0	ERROR
+invalid-number-9	sic	.5	1.2	0	ERROR
+invalid-number-10	sic	+1	1.2	0	ERROR
+invalid-sic-11	sic	150	0	0	ERROR
+invalid-sic-12	sic	150	1.2	17	ERROR
+invalid-sic-13	sic	150	1.2	1.1	ERROR
+invalid-sic-14	sic	150		2	ERROR
+invalid-dic-15	dic	100	3	0	12	12	1	g/L	true	ERROR
+invalid-dic-16	dic	100	3	1	12	0	1	g/L	true	ERROR
+invalid-dic-17	dic	100	3	1	0	12	1	g/L	true	ERROR
+invalid-dic-18	dic	100	3	1	12	12		g/L	true	ERROR
+invalid-dic-19	dic	100	3	1	12	12	1	g/L	false	ERROR
+invalid-dic-20	dic	100	3	1	12	12	1	unknown	true	ERROR
+sic-platelets-99.999	sic	99.999	1.2	0	2,0,0,2,false
+sic-platelets-100	sic	100	1.2	0	1,0,0,1,false
+sic-platelets-149.999	sic	149.999	1.2	0	1,0,0,1,false
+sic-platelets-150	sic	150	1.2	0	0,0,0,0,false
+sic-inr-1.2	sic	150	1.2	0	0,0,0,0,false
+sic-inr-1.2001	sic	150	1.2001	0	0,1,0,1,false
+sic-inr-1.4	sic	150	1.4	0	0,1,0,1,false
+sic-inr-1.4001	sic	150	1.4001	0	0,2,0,2,false
+sic-sofa-0	sic	150	1.2	0	0,0,0,0,false
+sic-sofa-1	sic	150	1.2	1	0,0,1,1,false
+sic-sofa-2	sic	150	1.2	2	0,0,2,2,false
+sic-coagulation-gate	sic	100	1.3	2	1,1,2,4,false
+sic-coagulation-gate-platelets	sic	99	1.2	2	2,0,2,4,false
+sic-coagulation-gate-inr	sic	150	1.5	2	0,2,2,4,false
+sic-positive-minimum	sic	99	1.3	1	2,1,1,4,true
+sic-maximum	sic	99	1.5	16	2,2,2,6,true
+sic-comma	sic	99,999	1,4001	2	2,2,2,6,true
+sofa-0	sofa	400	false	1	1	mg/dL	1000	70	0	0	0	0	true	0,0,0,0,0
+sofa-1	sofa	399.999	false	1	1	mg/dL	1000	70	0	0	0	0	true	1,0,0,0,1
+sofa-2	sofa	300	false	1	1	mg/dL	1000	70	0	0	0	0	true	1,0,0,0,1
+sofa-3	sofa	299.999	false	1	1	mg/dL	1000	70	0	0	0	0	true	2,0,0,0,2
+sofa-4	sofa	99	false	1	1	mg/dL	1000	70	0	0	0	0	true	2,0,0,0,2
+sofa-5	sofa	400	false	1.199	1	mg/dL	1000	70	0	0	0	0	true	0,0,0,0,0
+sofa-6	sofa	400	false	1.2	1	mg/dL	1000	70	0	0	0	0	true	0,0,1,0,1
+sofa-7	sofa	400	false	2	1	mg/dL	1000	70	0	0	0	0	true	0,0,2,0,2
+sofa-8	sofa	400	false	6	1	mg/dL	1000	70	0	0	0	0	true	0,0,3,0,3
+sofa-9	sofa	400	false	12	1	mg/dL	1000	70	0	0	0	0	true	0,0,4,0,4
+sofa-10	sofa	400	false	1	1.2	mg/dL	1000	70	0	0	0	0	true	0,0,0,1,1
+sofa-11	sofa	400	false	1	2	mg/dL	1000	70	0	0	0	0	true	0,0,0,2,2
+sofa-12	sofa	400	false	1	3.5	mg/dL	1000	70	0	0	0	0	true	0,0,0,3,3
+sofa-13	sofa	400	false	1	5	mg/dL	1000	70	0	0	0	0	true	0,0,0,4,4
+sofa-14	sofa	400	false	1	1	mg/dL	500	70	0	0	0	0	true	0,0,0,0,0
+sofa-15	sofa	400	false	1	1	mg/dL	499.999	70	0	0	0	0	true	0,0,0,3,3
+sofa-16	sofa	400	false	1	1	mg/dL	200	70	0	0	0	0	true	0,0,0,3,3
+sofa-17	sofa	400	false	1	1	mg/dL	199.999	70	0	0	0	0	true	0,0,0,4,4
+sofa-18	sofa	400	false	1	1	mg/dL	1000	70	0	0	0	0	true	0,0,0,0,0
+sofa-19	sofa	400	false	1	1	mg/dL	1000	69.999	0	0	0	0	true	0,1,0,0,1
+sofa-20	sofa	400	false	1	1	mg/dL	1000	70	5	0	0	0	true	0,2,0,0,2
+sofa-21	sofa	400	false	1	1	mg/dL	1000	70	5.0001	0	0	0	true	0,3,0,0,3
+sofa-22	sofa	400	false	1	1	mg/dL	1000	70	15	0	0	0	true	0,3,0,0,3
+sofa-23	sofa	400	false	1	1	mg/dL	1000	70	15.0001	0	0	0	true	0,4,0,0,4
+sofa-24	sofa	400	false	1	1	mg/dL	1000	70	0	0.1	0	0	true	0,3,0,0,3
+sofa-25	sofa	400	false	1	1	mg/dL	1000	70	0	0.1001	0	0	true	0,4,0,0,4
+sofa-26	sofa	400	false	1	1	mg/dL	1000	70	0	0	0.1	0	true	0,3,0,0,3
+sofa-27	sofa	400	false	1	1	mg/dL	1000	70	0	0	0.1001	0	true	0,4,0,0,4
+sofa-28	sofa	400	false	1	1	mg/dL	1000	70	0	0	0	1	true	0,2,0,0,2
+sofa-supported-200	sofa	200	true	1	1	mg/dL	1000	70	0	0	0	0	true	2,0,0,0,2
+sofa-supported-199.999	sofa	199.999	true	1	1	mg/dL	1000	70	0	0	0	0	true	3,0,0,0,3
+sofa-supported-100	sofa	100	true	1	1	mg/dL	1000	70	0	0	0	0	true	3,0,0,0,3
+sofa-supported-99.999	sofa	99.999	true	1	1	mg/dL	1000	70	0	0	0	0	true	4,0,0,0,4
+sofa-si	sofa	400	false	34.2	176.8	umol/L	1000	70	0	0	0	0	true	0,0,2,2,4
+sofa-invalid-1	sofa	400		1	1	mg/dL	1000	70	0	0	0	0	true	ERROR
+sofa-invalid-5	sofa	400	false	1	1	mg/dL		70	0	0	0	0	true	ERROR
+sofa-invalid-7	sofa	400	false	1	1	mg/dL	1000	70		0	0	0	true	ERROR
+sofa-invalid-11	sofa	400	false	1	1	mg/dL	1000	70	0	0	0	0	false	ERROR
+sofa-invalid-4	sofa	400	false	1	1	mmol/L	1000	70	0	0	0	0	true	ERROR

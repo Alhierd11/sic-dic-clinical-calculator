@@ -1,0 +1,743 @@
+[
+  {
+    "id": "sofa-0",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,0,0"
+  },
+  {
+    "id": "sofa-1",
+    "operation": "sofa",
+    "input": [
+      "399.999",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "1,0,0,0,1"
+  },
+  {
+    "id": "sofa-2",
+    "operation": "sofa",
+    "input": [
+      "300",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "1,0,0,0,1"
+  },
+  {
+    "id": "sofa-3",
+    "operation": "sofa",
+    "input": [
+      "299.999",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "2,0,0,0,2"
+  },
+  {
+    "id": "sofa-4",
+    "operation": "sofa",
+    "input": [
+      "99",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "2,0,0,0,2"
+  },
+  {
+    "id": "sofa-5",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1.199",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,0,0"
+  },
+  {
+    "id": "sofa-6",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1.2",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,1,0,1"
+  },
+  {
+    "id": "sofa-7",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "2",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,2,0,2"
+  },
+  {
+    "id": "sofa-8",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "6",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,3,0,3"
+  },
+  {
+    "id": "sofa-9",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "12",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,4,0,4"
+  },
+  {
+    "id": "sofa-10",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1.2",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,1,1"
+  },
+  {
+    "id": "sofa-11",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "2",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,2,2"
+  },
+  {
+    "id": "sofa-12",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "3.5",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,3,3"
+  },
+  {
+    "id": "sofa-13",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "5",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,4,4"
+  },
+  {
+    "id": "sofa-14",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "500",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,0,0"
+  },
+  {
+    "id": "sofa-15",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "499.999",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,3,3"
+  },
+  {
+    "id": "sofa-16",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "200",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,3,3"
+  },
+  {
+    "id": "sofa-17",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "199.999",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,4,4"
+  },
+  {
+    "id": "sofa-18",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,0,0,0"
+  },
+  {
+    "id": "sofa-19",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "69.999",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,1,0,0,1"
+  },
+  {
+    "id": "sofa-20",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "5",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,2,0,0,2"
+  },
+  {
+    "id": "sofa-21",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "5.0001",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,3,0,0,3"
+  },
+  {
+    "id": "sofa-22",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "15",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,3,0,0,3"
+  },
+  {
+    "id": "sofa-23",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "15.0001",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,4,0,0,4"
+  },
+  {
+    "id": "sofa-24",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0.1",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,3,0,0,3"
+  },
+  {
+    "id": "sofa-25",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0.1001",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,4,0,0,4"
+  },
+  {
+    "id": "sofa-26",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0.1",
+      "0",
+      "true"
+    ],
+    "expected": "0,3,0,0,3"
+  },
+  {
+    "id": "sofa-27",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0.1001",
+      "0",
+      "true"
+    ],
+    "expected": "0,4,0,0,4"
+  },
+  {
+    "id": "sofa-28",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "1",
+      "true"
+    ],
+    "expected": "0,2,0,0,2"
+  },
+  {
+    "id": "sofa-supported-200",
+    "operation": "sofa",
+    "input": [
+      "200",
+      "true",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "2,0,0,0,2"
+  },
+  {
+    "id": "sofa-supported-199.999",
+    "operation": "sofa",
+    "input": [
+      "199.999",
+      "true",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "3,0,0,0,3"
+  },
+  {
+    "id": "sofa-supported-100",
+    "operation": "sofa",
+    "input": [
+      "100",
+      "true",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "3,0,0,0,3"
+  },
+  {
+    "id": "sofa-supported-99.999",
+    "operation": "sofa",
+    "input": [
+      "99.999",
+      "true",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "4,0,0,0,4"
+  },
+  {
+    "id": "sofa-si",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "34.2",
+      "176.8",
+      "umol/L",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "0,0,2,2,4"
+  },
+  {
+    "id": "sofa-invalid-1",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "sofa-invalid-5",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "sofa-invalid-7",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "sofa-invalid-11",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mg/dL",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "false"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "sofa-invalid-4",
+    "operation": "sofa",
+    "input": [
+      "400",
+      "false",
+      "1",
+      "1",
+      "mmol/L",
+      "1000",
+      "70",
+      "0",
+      "0",
+      "0",
+      "0",
+      "true"
+    ],
+    "expected": "ERROR"
+  }
+]

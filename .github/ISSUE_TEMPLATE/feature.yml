@@ -1,0 +1,13 @@
+name: Feature request
+description: Propose a scoped clinical workflow or usability improvement
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: User need, intended behavior and acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Clinical safety, privacy and accessibility considerations

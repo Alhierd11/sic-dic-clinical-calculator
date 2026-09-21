@@ -1,0 +1,242 @@
+[
+  {
+    "id": "invalid-number-0",
+    "operation": "sic",
+    "input": [
+      "",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-1",
+    "operation": "sic",
+    "input": [
+      "-1",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-2",
+    "operation": "sic",
+    "input": [
+      "NaN",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-3",
+    "operation": "sic",
+    "input": [
+      "Infinity",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-4",
+    "operation": "sic",
+    "input": [
+      "1e3",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-5",
+    "operation": "sic",
+    "input": [
+      "1,2.3",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-6",
+    "operation": "sic",
+    "input": [
+      "1 000",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-7",
+    "operation": "sic",
+    "input": [
+      "1.1234567",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-8",
+    "operation": "sic",
+    "input": [
+      "1000000000",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-9",
+    "operation": "sic",
+    "input": [
+      ".5",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-number-10",
+    "operation": "sic",
+    "input": [
+      "+1",
+      "1.2",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-sic-11",
+    "operation": "sic",
+    "input": [
+      "150",
+      "0",
+      "0"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-sic-12",
+    "operation": "sic",
+    "input": [
+      "150",
+      "1.2",
+      "17"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-sic-13",
+    "operation": "sic",
+    "input": [
+      "150",
+      "1.2",
+      "1.1"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-sic-14",
+    "operation": "sic",
+    "input": [
+      "150",
+      "",
+      "2"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-dic-15",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "0",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-dic-16",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "0",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-dic-17",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "0",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-dic-18",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "",
+      "g/L",
+      "true"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-dic-19",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "false"
+    ],
+    "expected": "ERROR"
+  },
+  {
+    "id": "invalid-dic-20",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "unknown",
+      "true"
+    ],
+    "expected": "ERROR"
+  }
+]

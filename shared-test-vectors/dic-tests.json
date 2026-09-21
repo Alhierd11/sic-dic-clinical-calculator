@@ -1,0 +1,317 @@
+[
+  {
+    "id": "dic-platelets-49.999",
+    "operation": "dic",
+    "input": [
+      "49.999",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "2,0,0,0,2,false,false"
+  },
+  {
+    "id": "dic-platelets-50",
+    "operation": "dic",
+    "input": [
+      "50",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "1,0,0,0,1,false,false"
+  },
+  {
+    "id": "dic-platelets-99.999",
+    "operation": "dic",
+    "input": [
+      "99.999",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "1,0,0,0,1,false,false"
+  },
+  {
+    "id": "dic-platelets-100",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,0,0,0,false,false"
+  },
+  {
+    "id": "dic-dimer-3",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,0,0,0,false,false"
+  },
+  {
+    "id": "dic-dimer-3.0001",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3.0001",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,2,0,0,2,false,false"
+  },
+  {
+    "id": "dic-dimer-7",
+    "operation": "dic",
+    "input": [
+      "100",
+      "7",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,2,0,0,2,false,false"
+  },
+  {
+    "id": "dic-dimer-7.0001",
+    "operation": "dic",
+    "input": [
+      "100",
+      "7.0001",
+      "1",
+      "12",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,3,0,0,3,false,false"
+  },
+  {
+    "id": "dic-pt-14.999",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "14.999",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,0,0,0,false,false"
+  },
+  {
+    "id": "dic-pt-15",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "15",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,1,0,1,false,false"
+  },
+  {
+    "id": "dic-pt-17.999",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "17.999",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,1,0,1,false,false"
+  },
+  {
+    "id": "dic-pt-18",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "18",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,2,0,2,false,false"
+  },
+  {
+    "id": "dic-fibrinogen-0.999",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "0.999",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,0,1,1,false,false"
+  },
+  {
+    "id": "dic-fibrinogen-1.000",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "12",
+      "12",
+      "1.000",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,0,0,0,false,false"
+  },
+  {
+    "id": "dic-total-4",
+    "operation": "dic",
+    "input": [
+      "50",
+      "7",
+      "1",
+      "15",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "1,2,1,0,4,false,false"
+  },
+  {
+    "id": "dic-total-5",
+    "operation": "dic",
+    "input": [
+      "50",
+      "7",
+      "1",
+      "18",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "1,2,2,0,5,true,false"
+  },
+  {
+    "id": "dic-total-8",
+    "operation": "dic",
+    "input": [
+      "49",
+      "8",
+      "1",
+      "18",
+      "12",
+      "0.9",
+      "g/L",
+      "true"
+    ],
+    "expected": "2,3,2,1,8,true,false"
+  },
+  {
+    "id": "dic-negative-delta",
+    "operation": "dic",
+    "input": [
+      "100",
+      "3",
+      "1",
+      "11",
+      "12",
+      "1",
+      "g/L",
+      "true"
+    ],
+    "expected": "0,0,0,0,0,false,true"
+  },
+  {
+    "id": "dic-ratio-exact-three",
+    "operation": "dic",
+    "input": [
+      "100",
+      "0.9",
+      "0.3",
+      "12",
+      "12",
+      "100",
+      "mg/dL",
+      "true"
+    ],
+    "expected": "0,0,0,0,0,false,false"
+  },
+  {
+    "id": "dic-ratio-exact-seven",
+    "operation": "dic",
+    "input": [
+      "100",
+      "2.1",
+      "0.3",
+      "12",
+      "12",
+      "100",
+      "mg/dL",
+      "true"
+    ],
+    "expected": "0,2,0,0,2,false,false"
+  },
+  {
+    "id": "dic-ratio-above-seven",
+    "operation": "dic",
+    "input": [
+      "100",
+      "2.100001",
+      "0.3",
+      "12",
+      "12",
+      "99.9",
+      "mg/dL",
+      "true"
+    ],
+    "expected": "0,3,0,1,4,false,false"
+  }
+]
